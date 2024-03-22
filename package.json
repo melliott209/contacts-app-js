@@ -1,0 +1,17 @@
+{
+  "name": "contacts",
+  "version": "1.0.0",
+  "description": "contact.app from hypermedia systems",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^9.4.3",
+    "express": "^4.19.1",
+    "pug": "^3.0.2"
+  },
+  "type": "module"
+}

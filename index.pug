@@ -1,0 +1,27 @@
+extends layout.pug
+
+block content
+  form(action="/contacts" method="get")
+    label(for="search") Search
+    input(type="search" name="q" value=query)
+    input(type="submit" value="Search")
+
+  table
+    thead
+      tr
+        th First
+        th Last
+    tbody
+      each contact in contacts 
+        tr
+          td #{contact.first} 
+          td #{contact.last} 
+          td #{contact.phone} 
+          td #{contact.email} 
+          td 
+            a(href=`/contacts/${contact.id}/edit`) Edit 
+          td 
+            a(href=`/contacts/${contact.id}`) View 
+
+  p 
+    a(href="/contacts/new") Add Contact

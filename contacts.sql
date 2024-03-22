@@ -1,0 +1,9 @@
+ATTACH DATABASE 'contacts.db' AS ContactsDB;
+
+CREATE TABLE IF NOT EXISTS ContactsDB.Contacts (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  first TEXT NOT NULL,
+  last TEXT NOT NULL,
+  phone TEXT NOT NULL,
+  email TEXT NOT NULL
+);
